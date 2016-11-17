@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title></title>
 		<style type="text/css">
 			body,html {
@@ -11,21 +11,46 @@
 			.page {
 				width: 793px;
 				height: 1121px;
-				background-color: rgb(205,115,48);
-				margin: 15px auto;
+				
+				background-color: #DA883F;
+				position: relative;
 			}
 			
 			@media only screen and (min-width: 720px) {
 				.page {
+					margin: 15px auto;
 					width: 595px;
 					height: 842px;
 				}
 			}
+			
+			.page.page1 .frame1 {
+				position: absolute;
+				left: 25px; top: 25px;
+				bottom: 25px; right: 25px;
+				background-color: #fff;
+				border: solid 2px #B9742C;
+				color: red;
+				z-index: 9;
+			}
+			
+			.page.page1 .frame2 {
+				position: absolute;
+				left: 50px;
+				top: 50px;
+				bottom: 50px;
+				right: 50px;
+				border: solid 1px #B9742C;
+				font-size: 12pt;
+				color: yellow;
+				z-index: 99;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="page">
-			
+		<div class="page page1">
+			<div class="frame frame1"></div>
+			<div class="frame frame2"></div>
 		</div>
 		<div class="page">
 			
