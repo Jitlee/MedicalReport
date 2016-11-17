@@ -35,22 +35,23 @@ public class WrapperConfig {
         try {
             String osname = System.getProperty("os.name").toLowerCase();
 
-            String cmd = osname.contains("windows") ? "where wkhtmltopdf" : "which wkhtmltopdf";
-
-            Process p = Runtime.getRuntime().exec(cmd);
-            p.waitFor();
-
-            String text = IOUtils.toString(p.getInputStream(), Charset.defaultCharset());
-
-            if (text.isEmpty())
-                throw new RuntimeException();
+//            String cmd = osname.contains("windows") ? "where wkhtmltopdf" : "which wkhtmltopdf";
+//
+//            Process p = Runtime.getRuntime().exec(cmd);
+//            p.waitFor();
+//
+//            String text = IOUtils.toString(p.getInputStream(), Charset.defaultCharset());
+//
+//            if (text.isEmpty())
+//                throw new RuntimeException();
+            String text = "/usr/local/bin/wkhtmltopdf";
 
             setWkhtmltopdfCommand(text);
-        } catch (InterruptedException e) {
+        /*} catch (InterruptedException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (RuntimeException e) {
+        */} catch (RuntimeException e) {
             e.printStackTrace();
         }
 
