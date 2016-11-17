@@ -4,6 +4,7 @@ import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Map;
 import java.util.UUID;
 
 import javax.servlet.ServletContext;
@@ -35,12 +36,25 @@ public class Download extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String url = "";
+		String outputFileName = "检测报告";
+		Map<String, String[]> params = request.getParameterMap();
+		if(params.containsKey("url")) {
+			url = params.get("url")[0];
+		}
+		
+		if(params.containsKey("name")) {
+			outputFileName = params.get("name")[0];
+		}
+		
+		
+		
 		// TODO Auto-generated method stub
 		String filePath = UUID.randomUUID().toString() + ".pdf";
 		
 		Pdf pdf = new Pdf();
-		pdf.addParam(new Param("-L", "0m"), new Param("-T", "0m"), new Param("-B", "0m"), new Param("-R", "0m"));
-		pdf.addPage("http://127.0.0.1:8020/MedicalReport/index.html", PageType.url);
+		pdf.addParam(new Param("-L", "0m"), new Param("-T", "0m"), new Param("-B", "0m"), new Param("-R", "0m"), new Param("--disable-javascript"));
+		pdf.addPage(url, PageType.url);
 
 		try {
 			pdf.saveAs(filePath);
@@ -57,10 +71,10 @@ public class Download extends HttpServlet {
 		    }
 		    response.setContentType(mimetype);
 		    response.setContentLength((int)file.length());
-		    String fileName = (new File(filePath)).getName();
+		    String fileName = file.getName();
 
 		    // sets HTTP header
-		    response.setHeader("Content-Disposition", "attachment; filename=\"" + fileName + "\"");
+		    response.setHeader("Content-Disposition", "attachment; filename=\"" + outputFileName + "\"");
 
 		    byte[] byteBuffer = new byte[BUFSIZE];
 		    DataInputStream in = new DataInputStream(new FileInputStream(file));
@@ -73,6 +87,8 @@ public class Download extends HttpServlet {
 
 		    in.close();
 		    outStream.close();
+		    
+		    file.delete();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

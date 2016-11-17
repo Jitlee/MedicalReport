@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<style type="text/css">
+			body,html {
+				margin: 0;
+				padding: 0;
+			}
+			.page {
+				width: 794px;
+				height: 1096px;
+				
+				position: relative;
+				margin: auto;
+			}
+			.page.page1 {
+				background-color: #DA883F;
+			}
+			
+			.page img.frame {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.page.page1 .form.form1 {
+				position: absolute;
+				right: 95px;
+				bottom: 270px;
+				width: 274px;
+				text-align: center;
+				line-height: 50px;
+				color: rgb(112,111,164);
+				font-size: 20px;
+			}
+			
+			.page.page1 .form1 .title {
+				color: rgb(24,21,115);
+				font-weight: bold;
+				font-size: 24px;
+			}
+			
+			.page.page1 .form1 .row {
+				border: solid 1px rgb(232,173,100); 
+				border-radius: 10px;
+				margin: 15px 0px;
+			}
+			
+			.page .qr-form {
+				position: absolute;
+				top: 830px;
+				left: 285px;
+				width: 414px;
+				height: 110px;
+				border: solid 1px rgb(232,173,100); 
+				border-radius: 10px;
+			}
+			
+			.page .qr-form img.qr {
+				position: absolute;
+				width: 90px;
+				height: 90px;
+				left: 10px;
+				top: 10px;
+			}
+			
+			.page .qr-form .desc {
+				vertical-align: middle;
+				color: rgb(112,111,164);
+				padding: 30px 20px 10px 120px;
+				font-size: 16px
+			}
+			
+			.page .footer {
+				position: absolute;
+				left: 43px;
+				bottom: 43px;
+				right: 43px;
+				height: 60px;
+				color: #fefefe;
+			}
+			
+			.page .footer span {
+				display: inline-block;
+				zoom: *;
+				font-size: 15px;
+				vertical-align: middle;
+			}
+			
+			.page .footer span.phone {
+				font-size: 24px;
+			}
+			
+			.page .footer span.addr {
+				font-size: 10px;
+			}
+			
+			.page .footer span.url {
+				font-size: 8px;
+			}
+			
+			.page .footer span.com {
+				font-size: 14px;
+			}
+				
+			.page .footer .left {
+				text-align: left;
+				padding-left: 20px;
+				padding-top: 15px;
+			}
+			
+			.page .footer .right {
+				position: absolute;
+				top: 15px;
+				right: 20px;
+				font-size: 14px;
+				line-height: 14px;
+			}
+			
+			.page.page2 .message {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				bottom: 0px;
+				right: 0px;
+				padding: 190px 70px 70px 70px;
+				text-align: left;
+				font-size: 20px;
+				color: #999;
+				line-height: 49px;
+			}
+			
+			.page.page2 .teacher {
+				position: absolute;
+				top: 930px;
+				width: 593px;
+				left: 100px;
+				line-height: 80px;
+				text-align: center;
+				font-size: 24px;
+				color: #fff;
+			}
+			
+			.page.page3 img.avatar {
+				position: absolute;
+				width: 120px;
+				height: 120px;
+				left: 70px;
+				top: 190px;
+			}
+			
+			.page.page3 table.table1 {
+				position: absolute;
+				text-align: left;
+				left: 210px;
+				top: 180px;
+				width: 500px;
+			}
+			
+			.page.page3 table.table1 td {
+				padding: 13px;
+				font-size: 20px;
+				color: #666;
+				border-bottom: solid 1px #ccc;
+			}
+			
+			.page.page3 table.table2 {
+				position: absolute;
+				text-align: left;
+				left: 160px;
+				bottom: 280px;
+				width: 260px;
+				font-size: 24px;
+				color: #d28440;
+			}
+			
+			.page.page3 table.table2 td {
+				height: 70px;
+				vertical-align: bottom;
+			}
+			
+			.page.page4 img.icon {
+				width: 100px;
+				height: 60px;
+			}
+			
+			.page.page5 .qr-form .desc {
+				vertical-align: middle;
+				font-size: 17px;
+				padding-right: 100px;
+				color: #333;
+			}
+			
+			.page.page4 table {
+				position: absolute;
+				text-align: left;
+				top: 200px;
+				left: 70px;
+				width: 654px;
+				color: #333;
+				font-size: 20px;
+			}
+			
+			.page.page4 table td {
+				height: 100px;
+			}
+			
+			.page.page4 table td.img {
+				text-align: center;
+			}
+			
+			.page.page4 table td.text {
+				border-bottom: solid 1px #ccc;
+			}
+			
+			.page.page4 table img.icon {
+				width: 80px;
+				height: 60px;
+			}
+			
+			
+			.page.page5 .qr-form {
+				position: absolute;
+				top: 830px;
+				left: 335px;
+				width: 414px;
+				height: 110px;
+				border: none;
+			}
+			
+			.page.page5 .qr-form img.qr {
+				position: absolute;
+				width: 90px;
+				height: 90px;
+				left: 10px;
+				top: 10px;
+			}
+			
+			.page.page5 .qr-form .desc {
+				font-size: 20px
+			}
+			
+			/** 下载样式 **/
+			.download {
+				display: none;
+			}
+			
+			body.view .download {
+				display: block;
+				width: 100%;
+				z-index: 999;
+				top: 0px;
+				margin: auto;
+			}
+			
+			body.view .download-inner {
+				padding-left: 30px;
+				height: 44px;
+				line-height: 44px;
+				background-color: #Ef4d2d;
+				width: 794px;
+				margin: auto;
+			}
+			
+			@media only screen and (min-width: 720px) {
+				.page {
+					margin-top: 15px;
+					margin-botom: 15px;
+				}
+				
+			    body.view {
+			    }
+				
+				body.view .download{
+					position: fixed;
+				}
+				
+				body.view .download-inner{
+					background: rgba(250,250,250, 0.8);
+				}
+			}
+			
+			@media only screen and (max-width: 720px) {
+				html, body {
+			        position: relative;
+			        height: 100%;
+			    }
+			    
+			    body.view {
+			    }
+				
+				body.view .download{
+					position: fixed;
+				}
+				
+				body.view .download-inner{
+					background: rgba(250,250,250, 0.8);
+				}
+				
+			    body {
+			        background: #eee;
+			        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			        font-size: 14px;
+			        color:#000;
+			        margin: 0;
+			        padding: 0;
+			    }
+			    
+			    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+				    bottom: 0px;
+				}
+			    
+			    .swiper-container {
+			        width: 100%;
+			        height: 100%;
+			    }
+			    
+			    .swiper-slide {
+			        text-align: center;
+			        font-size: 18px;
+			        background: #fff;
+			
+			        /* Center slide text vertically */
+			        display: -webkit-box;
+			        display: -ms-flexbox;
+			        display: -webkit-flex;
+			        display: flex;
+			        -webkit-box-pack: center;
+			        -ms-flex-pack: center;
+			        -webkit-justify-content: center;
+			        justify-content: center;
+			        -webkit-box-align: center;
+			        -ms-flex-align: center;
+			        -webkit-align-items: center;
+			        align-items: center;
+			    }
+				
+				.page {
+					width: 100%;
+					height: 141vw;
+				}
+			
+				.page.page1 .form.form1 {
+					font-size: 4vw;
+					line-height: 6vw;
+					width: 40vw;
+					right: 8vw;
+					bottom: 28vw;
+				}
+				
+				.page.page1 .form.form1 .title {
+					font-size: 5vw;
+				}
+				
+				.page.page1 .form1 .row {
+					margin: 3vw 0px;
+					border-radius: 2vw;
+				}
+				
+				.page.page1 .qr-form {
+					border-radius: 2vw;
+					bottom: 15vw;
+					right: 8vw;
+					width: 63vw;
+					height: 12vw;
+					position: absolute;
+				}
+				
+				.page.page1 .qr-form img.qr {
+					position: absolute;
+					top:1vw;
+					left: 1vw;
+					width: 10vw;
+					height: 10vw;
+				}
+				
+				.page.page1 .qr-form .desc {
+					padding-left: 13vw;
+					padding-top: 2vw;
+					font-size: 2vw;
+					text-align: left;
+				}
+				
+				.page .footer {
+					position: absolute;
+					left: 5vw;
+					bottom: 5vw;
+					right: 5vw;
+					height: 8vw;
+					color: #fefefe;
+				}
+				
+				.page .footer span {
+					display: inline-block;
+					zoom: *;
+					font-size: 2vw;
+					vertical-align: middle;
+				}
+				
+				.page .footer span.phone {
+					font-size: 3.5vw;
+				}
+				
+				.page .footer span.addr {
+					font-size: 2vw;
+				}
+				
+				.page .footer span.url {
+					font-size: 2vw;
+					line-height: 2vw
+				}
+				
+				.page .footer span.com {
+					font-size: 2vw;
+					line-height: 2vw
+				}
+				
+				.page .footer .left {
+					text-align: left;
+					padding-left: 3vw;
+					padding-top: 0;
+				}
+				
+				.page .footer .right {
+					position: absolute;
+					top: 1vw;
+					right: 3vw;
+					font-size: 2vw;
+					line-height: 2vw
+				}
+				
+				.page.page2 .message {
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					bottom: 0px;
+					right: 0px;
+					padding: 24vw 9vw 9vw 9vw;
+					text-align: left;
+					font-size: 3.8vw;
+					color: #999;
+					line-height: 6.12vw;
+				}
+				
+				.page.page2 .teacher {
+					position: absolute;
+					left: 0px;
+					right: 0px;
+					bottom: 16.5vw;
+					color: #fff;
+					font-size: 4vw;
+					text-align: center;
+				}
+				
+				.page.page3 img.avatar {
+					position: absolute;
+					width: 17vw;
+					height: 17vw;
+					left: 10vw;
+					top: 23vw;
+				}
+				
+				.page.page3 table.table1 {
+					position: absolute;
+					text-align: left;
+					left: 30vw;
+					top: 24vw;
+					width: 60vw;
+				}
+				
+				.page.page3 table.table1 td {
+					padding: 0.5vw;
+					font-size: 3vw;
+					color: #666;
+					border-bottom: solid 1px #ccc;
+				}
+				
+				.page.page3 table.table2 {
+					position: absolute;
+					text-align: left;
+					left: 18vw;
+					bottom: 35vw;
+					width: 33vw;
+					font-size: 3vw;
+					color: #d28440;
+				}
+				
+				.page.page3 table.table2 td {
+					height: 9vw;
+					vertical-align: bottom;
+				}
+				
+				.page.page4 table {
+					position: absolute;
+					text-align: left;
+					top: 24vw;
+					left: 10vw;
+					width: 80vw;
+					color: #333;
+					font-size: 3vw;
+				}
+				
+				.page.page4 table td {
+					height: 13vw;
+				}
+				
+				.page.page4 table td.text {
+					border-bottom: solid 1px #ccc;
+				}
+				
+				.page.page4 table img.icon {
+					width: 12vw;
+					height: 8vw;
+				}
+				
+				.page.page5 .qr-form {
+					position: absolute;
+					border-radius: 2vw;
+					bottom: 15vw;
+					right: 8vw;
+					width: 43vw;
+					height: 12vw;
+				}
+				
+				.page.page5 .qr-form img.qr {
+					position: absolute;
+					top:1vw;
+					left: 1vw;
+					width: 10vw;
+					height: 10vw;
+				}
+				
+				.page.page5 .qr-form .desc {
+					padding-left: 13vw;
+					padding-top: 2vw;
+					font-size: 2vw;
+					text-align: left;
+				}
+				
+				.page.page5 .footer {
+					bottom: 4vw;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="download">
+			<div class="download-inner">
+				<button id="downloadButton" onclick="download();">下载</button>
+			</div>
+		</div>
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+					<div class="page page1">
+						<img class="frame" src="images/report/frame1.jpg"/>
+						<div class="form form1">
+							<div class="title">2014年12月14号</div>
+							<div class="row">园所：小博幼儿园</div>
+							<div class="row">班级：小一班</div>
+							<div class="row">姓名：好孩子</div>
+						</div>
+						<div class="qr-form">
+							<img class="qr" src="images/report/qr.png" />
+							<div class="desc">关于报告所显示的内容如有疑问请下载&lt;健康伴小宝&gt;了解</div>
+						</div>
+						<div class="footer">
+							<div class="left">
+								<span>联系热线</span>&nbsp;&nbsp;
+								<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+								<span>
+									<span class="addr">深圳南山高新科技园</span><br />
+									<span class="url">www.bamxiaobao.com</span>
+								</span>
+							</div>
+							<div class="right">
+								<span>编号：20161172201347</span><br />
+								<span class="com">科格微电子有限公司·支持</span>
+							</div>
+						</div>
+					</div>
+	            </div>
+	            <div class="swiper-slide">
+					<div class="page page2">
+						<img class="frame" src="images/report/frame2.jpg"/>
+						<div class="message">
+							亲爱的张龙小朋友：<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							你们好！我们学习了第一单元的“走进西部”，我是多么向往西部啊！
+							那辽阔青绿的大草原，那高大挺秀的戈壁卫士白杨树，那些默默无闻的边疆建设者，
+							在我的心里激起了巨大的波浪。老师号召我们和西部的小朋友手拉手交朋友，我高兴极了。
+						</div>
+						<div class="teacher">
+							你的健康老师：李炮儿
+						</div>
+						<div class="footer">
+							<div class="left">
+								<span>联系热线</span>&nbsp;&nbsp;
+								<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+								<span>
+									<span class="addr">深圳南山高新科技园</span><br />
+									<span class="url">www.bamxiaobao.com</span>
+								</span>
+							</div>
+							<div class="right">
+								<span>编号：20161172201347</span><br />
+								<span class="com">科格微电子有限公司·支持</span>
+							</div>
+						</div>
+					</div>
+	            </div>
+	            <div class="swiper-slide">
+					<div class="page page3">
+						<img class="frame" src="images/report/frame3.jpg"/>
+						<img class="avatar" src="images/report/avatar.png" />
+						<table class="table1" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>姓名：张龙</td>
+								<td>姓别：男</td>
+							</tr>
+							<tr>
+								<td colspan="2">年龄：2016年11月12日</td>
+							</tr>
+							<tr>
+								<td>园所：小博士幼儿园</td>
+								<td>班级：小一班</td>
+							</tr>
+						</table>
+						<table class="table2" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>110CM</td>
+								<td>↑2CM</td>
+							</tr>
+							<tr>
+								<td>17KG</td>
+								<td>↓1KG</td>
+							</tr>
+						</table>
+						<div class="footer">
+							<div class="left">
+								<span>联系热线</span>&nbsp;&nbsp;
+								<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+								<span>
+									<span class="addr">深圳南山高新科技园</span><br />
+									<span class="url">www.bamxiaobao.com</span>
+								</span>
+							</div>
+							<div class="right">
+								<span>编号：20161172201347</span><br />
+								<span class="com">科格微电子有限公司·支持</span>
+							</div>
+						</div>
+					</div>
+	            </div>
+	            <div class="swiper-slide">
+					<div class="page page4">
+						<img class="frame" src="images/report/frame4.jpg"/>
+						<table cellpadding="0" cellspacing="0">
+							<tr>
+								<td class="img">
+									<img class="icon" src="images/report/layer_4_1.png"/>
+								</td>
+								<td class="text">坐位体前屈</td>
+								<td class="text"></td>
+								<td class="text">13.5厘米</td>
+								<td class="text">真棒</td>
+							</tr>
+							<tr>
+								<td class="img">
+									<img class="icon" src="images/report/layer_4_2.png"/>
+								</td>
+								<td class="text">立定跳远</td>
+								<td class="text"></td>
+								<td class="text">13.5厘米</td>
+								<td class="text">真棒</td>
+							</tr>
+							<tr>
+								<td class="img">
+									<img class="icon" src="images/report/layer_4_3.png"/>
+								</td>
+								<td class="text">网球掷远</td>
+								<td class="text"></td>
+								<td class="text">7.5厘米</td>
+								<td class="text">真棒</td>
+							</tr>
+							<tr>
+								<td class="img">
+									<img class="icon" src="images/report/layer_4_4.png"/>
+								</td>
+								<td class="text">走平衡木</td>
+								<td class="text">测试10米</td>
+								<td class="text">18.5秒</td>
+								<td class="text">真棒</td>
+							</tr>
+							<tr>
+								<td class="img">
+									<img class="icon" src="images/report/layer_4_5.png"/>
+								</td>
+								<td class="text">折返跑</td>
+								<td class="text">测试10米</td>
+								<td class="text">6秒</td>
+								<td class="text">加油</td>
+							</tr>
+							<tr>
+								<td class="img">
+									<img class="icon" src="images/report/layer_4_5.png"/>
+								</td>
+								<td class="text">两脚立定跳</td>
+								<td class="text">测试10米</td>
+								<td class="text">6秒</td>
+								<td class="text">加油</td>
+							</tr>
+						</table>
+						<div class="footer">
+							<div class="left">
+								<span>联系热线</span>&nbsp;&nbsp;
+								<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+								<span>
+									<span class="addr">深圳南山高新科技园</span><br />
+									<span class="url">www.bamxiaobao.com</span>
+								</span>
+							</div>
+							<div class="right">
+								<span>编号：20161172201347</span><br />
+								<span class="com">科格微电子有限公司·支持</span>
+							</div>
+						</div>
+					</div>
+	            </div>
+	            <div class="swiper-slide">
+					<div class="page page5">
+						<img class="frame" src="images/report/frame5.jpg"/>
+						<div class="qr-form">
+							<img class="qr" src="images/report/qr.png" />
+							<div class="desc">关注小宝健康<br/>伴小宝成长</div>
+						</div>
+						<div class="footer">
+							<div class="left">
+								<span>联系热线</span>&nbsp;&nbsp;
+								<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+								<span>
+									<span class="addr">深圳南山高新科技园</span><br />
+									<span class="url">www.bamxiaobao.com</span>
+								</span>
+							</div>
+							<div class="right">
+								<span>编号：20161172201347</span><br />
+								<span class="com">科格微电子有限公司·支持</span>
+							</div>
+						</div>
+					</div>
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+        		<div class="swiper-pagination"></div>
+	    </div>
+		
+		<script src="libs/swiper/swiper.min.js"></script>
+		<script>
+			function download() {
+				window.location.href =  "http://localhost:8080/MedicalReport/Download?name=我的pdf&url=" + window.encodeURIComponent(window.location.href);
+			}
+		
+			document.body.className = "view";
+			if(navigator.userAgent.match(/(iPhone|iPod|Android)/i)){
+				var link = document.createElement("link");
+				link.rel = "stylesheet";
+				link.type = "text/css";
+				link.href = "libs/swiper/swiper.min.css";
+				document.getElementsByTagName("head")[0].appendChild(link);
+				var swiper = new Swiper('.swiper-container', {
+			        pagination: '.swiper-pagination',
+			        paginationClickable: true
+			    });
+		   	}
+		</script>
+	</body>
+</html>
