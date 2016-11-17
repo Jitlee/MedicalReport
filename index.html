@@ -9,54 +9,418 @@
 				padding: 0;
 			}
 			.page {
+				width: 794px;
+				height: 1124px;
+				
+				position: relative;
+			}
+			.page.page1 {
+				background-color: #DA883F;
+			}
+			
+			.page img.frame {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+			}
+			
+			/*.page.page1 .frame1 {
+				position: absolute;
+				left: 27px; top: 27px;
+				bottom: 27px; right: 27px;
+				background-color: #fff;
+				border: solid 1px #B9742C;
+			}
+			
+			.page.page1 .frame2 {
+				position: absolute;
+				left: 42px;
+				top: 42px;
+				bottom: 42px;
+				right: 42px;
+				border: solid 1px #B9742C;
+				font-size: 12pt;
+			}*/
+			
+			.page img.logo {
+				position: absolute;
+				width: 105px;
+				height: 105px;
+				left: 62px;
+				top: 62px;
+			}
+			
+			.page.page1 img.layer-1-1 {
+				position: absolute;
+				left: 43px;
+				top: 43px;
+				width: 707px;
+			}
+			
+			.page.page1 img.layer-1-2 {
+				position: absolute;
+				left: 111px;
+				top: 560px;
+				width: 277px;
+			}
+			
+			.page.page1 .form1 {
+				position: absolute;
+				left: 427px;
+				top: 558px;
+				width: 274px;
+				text-align: center;
+				line-height: 50px;
+				color: rgb(112,111,164);
+				font-size: 20px;
+			}
+			
+			.page.page1 .form1 .title {
+				color: rgb(24,21,115);
+				font-weight: bold;
+				font-size: 24px;
+			}
+			
+			.page.page1 .form1 .row {
+				border: solid 1px rgb(232,173,100); 
+				border-radius: 10px;
+				margin: 15px 0px;
+			}
+			
+			.page .qr-form {
+				position: absolute;
+				top: 830px;
+				left: 285px;
+				width: 414px;
+				height: 110px;
+				border: solid 1px rgb(232,173,100); 
+				border-radius: 10px;
+			}
+			
+			.page .qr-form img.qr {
+				position: absolute;
+				width: 90px;
+				height: 90px;
+				left: 10px;
+				top: 10px;
+			}
+			
+			.page .qr-form .desc {
+				vertical-align: middle;
+				color: rgb(112,111,164);
+				padding: 30px 20px 10px 120px;
+				font-size: 16px
+			}
+			
+			.page .footer {
+				position: absolute;
+				left: 43px;
+				bottom: 43px;
+				right: 43px;
+				height: 60px;
+				color: #fefefe;
+			}
+			
+			.page .footer span {
+				display: inline-block;
+				zoom: *;
+				font-size: 15px;
+				vertical-align: middle;
+			}
+			
+			.page .footer span.phone {
+				font-size: 24px;
+			}
+			
+			.page .footer span.addr {
+				font-size: 10px;
+			}
+			
+			.page .footer span.url {
+				font-size: 8px;
+			}
+			
+			.page .footer span.com {
+				font-size: 14px;
+			}
+			
+			.page .footer .left {
+				padding-top: 15px;;
+				padding-left: 20px;
+				float: left;
+			}
+			
+			.page .footer .right {
+				padding-top: 10px;;
+				padding-right: 20px;
+				float: right;
+			}
+			
+			/*.page.page1 .footer {
+				background-color: #DA883F;
+			}*/
+			
+			.page.page2 .frame2 {
+				position: absolute;
+				left: 0px;
+				top: 0px;
 				width: 793px;
 				height: 1121px;
-				
-				background-color: #DA883F;
-				position: relative;
+			}
+			
+			.page.page2 img.logo {
+				left: 42px;
+				top: 42px;
+			}
+			
+			.page.page2 .insc {
+				position: absolute;
+				top: 930px;
+				width: 593px;
+				left: 100px;
+				line-height: 80px;
+				text-align: center;
+				font-size: 24px;
+				color: #fff;
+			}
+			
+			.page.page2 .insc .block {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background-color: red;
+				left: 80px;
+				top: 15px;
+				border-radius: 5px;
+			}
+			
+			.page.page4 img.icon {
+				width: 100px;
+				height: 60px;
+			}
+			
+			
+			.page.page5 img.layer-5-1 {
+				position: absolute;
+				left: 43px;
+				top: 43px;
+				width: 707px;
+			}
+			
+			.page.page5 img.layer-5-2 {
+				position: absolute;
+				left: 43px;
+				top: 43px;
+				width: 707px;
+			}
+			
+			.page.page5 img.logo {
+				top: 42px;
+				left: 42px;
+			}
+			
+			.page.page5 .qr-form {
+				position: absolute;
+				top: 830px;
+				left: 335px;
+				width: 414px;
+				height: 110px;
+				border: none;
+			}
+			
+			.page.page5 .qr-form img.qr {
+				position: absolute;
+				width: 90px;
+				height: 90px;
+				left: 10px;
+				top: 10px;
+			}
+			
+			.page.page5 .qr-form .desc {
+				vertical-align: middle;
+				font-size: 17px;
+				padding-right: 100px;
+				color: #333;
 			}
 			
 			@media only screen and (min-width: 720px) {
 				.page {
 					margin: 15px auto;
-					width: 595px;
-					height: 842px;
 				}
-			}
-			
-			.page.page1 .frame1 {
-				position: absolute;
-				left: 25px; top: 25px;
-				bottom: 25px; right: 25px;
-				background-color: #fff;
-				border: solid 2px #B9742C;
-				color: red;
-				z-index: 9;
-			}
-			
-			.page.page1 .frame2 {
-				position: absolute;
-				left: 50px;
-				top: 50px;
-				bottom: 50px;
-				right: 50px;
-				border: solid 1px #B9742C;
-				font-size: 12pt;
-				color: yellow;
-				z-index: 99;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="page page1">
-			<div class="frame frame1"></div>
-			<div class="frame frame2"></div>
+			<img class="frame frame1" src="images/report/frame1.png" />
+			<!--<div class="frame frame1"></div>-->
+			<img class="layer-1-1" src="images/report/layer_1_1.png"/>
+			<img class="layer-1-2" src="images/report/layer_1_2.png"/>
+			<!--<div class="frame frame2"></div>-->
+			<img class="logo" src="images/report/logo.png"/>
+			<div class="form1">
+				<div class="title">2014年12月14号</div>
+				<div class="row">园所：小博幼儿园</div>
+				<div class="row">班级：小一班</div>
+				<div class="row">姓名：好孩子</div>
+			</div>
+			<div class="qr-form">
+				<img class="qr" src="images/report/qr.png" />
+				<div class="desc">关于报告所显示的内容如有疑问请下载&lt;健康伴小宝&gt;了结
+				</div>
+			</div>
+			<div class="footer">
+				<div class="left">
+					<span>联系热线</span>&nbsp;&nbsp;
+					<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+					<span>
+						<span class="addr">深圳南山高新科技园</span><br />
+						<span class="url">www.bamxiaobao.com</span>
+					</span>
+				</div>
+				<div class="right">
+					<span>编号：20161172201347</span><br />
+					<span class="com">科格微电子有限公司·支持</span><br />
+				</div>
+			</div>
 		</div>
-		<div class="page">
-			
+		<div class="page page2">
+			<img class="frame2" src="images/report/frame2.png" />
+			<img class="logo" src="images/report/logo.png"/>
+			<div class="insc">
+				<div class="block"></div>
+				您的健康老师：李炮儿
+			</div>
+			<div class="footer">
+				<div class="left">
+					<span>联系热线</span>&nbsp;&nbsp;
+					<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+					<span>
+						<span class="addr">深圳南山高新科技园</span><br />
+						<span class="url">www.bamxiaobao.com</span>
+					</span>
+				</div>
+				<div class="right">
+					<span>编号：20161172201347</span><br />
+					<span class="com">科格微电子有限公司·支持</span><br />
+				</div>
+			</div>
 		</div>
-		<div class="page">
-			
+		<div class="page page3">
+			<img class="frame frame3" src="images/report/frame3.png" />
+			<div class="footer">
+				<div class="left">
+					<span>联系热线</span>&nbsp;&nbsp;
+					<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+					<span>
+						<span class="addr">深圳南山高新科技园</span><br />
+						<span class="url">www.bamxiaobao.com</span>
+					</span>
+				</div>
+				<div class="right">
+					<span>编号：20161172201347</span><br />
+					<span class="com">科格微电子有限公司·支持</span><br />
+				</div>
+			</div>
+		</div>
+		<div class="page page4">
+			<img class="frame frame4" src="images/report/frame4.png" />
+			<table>
+				<tr>
+					<td>
+						<img class="icon" src="images/report/layer_4_1.png"/>
+					</td>
+					<td>坐位体前屈</td>
+					<td></td>
+					<td>13.5厘米</td>
+					<td>真棒</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="icon" src="images/report/layer_4_2.png"/>
+					</td>
+					<td>立定跳远</td>
+					<td></td>
+					<td>13.5厘米</td>
+					<td>真棒</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="icon" src="images/report/layer_4_3.png"/>
+					</td>
+					<td>网球掷远</td>
+					<td></td>
+					<td>7.5厘米</td>
+					<td>真棒</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="icon" src="images/report/layer_4_4.png"/>
+					</td>
+					<td>走平衡木</td>
+					<td>测试10米</td>
+					<td>18.5秒</td>
+					<td>真棒</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="icon" src="images/report/layer_4_5.png"/>
+					</td>
+					<td>折返跑</td>
+					<td>测试10米</td>
+					<td>6秒</td>
+					<td>加油</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="icon" src="images/report/layer_4_5.png"/>
+					</td>
+					<td>两次立定跳远</td>
+					<td>测试10米</td>
+					<td>6秒</td>
+					<td>加油</td>
+				</tr>
+			</table>
+			<div class="footer">
+				<div class="left">
+					<span>联系热线</span>&nbsp;&nbsp;
+					<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+					<span>
+						<span class="addr">深圳南山高新科技园</span><br />
+						<span class="url">www.bamxiaobao.com</span>
+					</span>
+				</div>
+				<div class="right">
+					<span>编号：20161172201347</span><br />
+					<span class="com">科格微电子有限公司·支持</span><br />
+				</div>
+			</div>
+		</div>
+		<div class="page page5">
+			<img class="frame frame5" src="images/report/frame5.png" />
+			<img class="layer-5-1" src="images/report/layer_5_1.png"/>
+			<img class="layer-5-2" src="images/report/layer_5_2.png"/>
+			<img class="logo" src="images/report/logo.png"/>
+			<div class="qr-form">
+				<img class="qr" src="images/report/qr.png" />
+				<div class="desc">关注“小宝”&nbsp;健康<br/>伴小宝成长</div>
+			</div>
+			<div class="footer">
+				<div class="left">
+					<span>联系热线</span>&nbsp;&nbsp;
+					<span class="phone">/ 400 800 3725 /</span>&nbsp;&nbsp;
+					<span>
+						<span class="addr">深圳南山高新科技园</span><br />
+						<span class="url">www.bamxiaobao.com</span>
+					</span>
+				</div>
+				<div class="right">
+					<span>编号：20161172201347</span><br />
+					<span class="com">科格微电子有限公司·支持</span><br />
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
