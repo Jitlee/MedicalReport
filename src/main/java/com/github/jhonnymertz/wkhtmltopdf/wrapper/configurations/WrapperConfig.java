@@ -33,8 +33,8 @@ public class WrapperConfig {
      */
     public String findExecutable() {
         try {
-            String osname = System.getProperty("os.name").toLowerCase();
-
+//            String osname = System.getProperty("os.name").toLowerCase();
+//
 //            String cmd = osname.contains("windows") ? "where wkhtmltopdf" : "which wkhtmltopdf";
 //
 //            Process p = Runtime.getRuntime().exec(cmd);
@@ -44,7 +44,7 @@ public class WrapperConfig {
 //
 //            if (text.isEmpty())
 //                throw new RuntimeException();
-            String text = "/usr/local/bin/wkhtmltopdf";
+            String text = "/usr/bin/wkhtmltopdf";
 
             setWkhtmltopdfCommand(text);
         /*} catch (InterruptedException e) {

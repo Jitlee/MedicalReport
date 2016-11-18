@@ -80,8 +80,8 @@
 			
 			.page .footer {
 				position: absolute;
-				left: 43px;
-				bottom: 43px;
+				left: 53px;
+				bottom: 28px;
 				right: 43px;
 				height: 60px;
 				color: #fefefe;
@@ -112,13 +112,11 @@
 				
 			.page .footer .left {
 				text-align: left;
-				padding-left: 20px;
-				padding-top: 15px;
 			}
 			
 			.page .footer .right {
 				position: absolute;
-				top: 15px;
+				top: 0px;
 				right: 20px;
 				font-size: 14px;
 				line-height: 14px;
@@ -139,7 +137,7 @@
 			
 			.page.page2 .teacher {
 				position: absolute;
-				top: 930px;
+				bottom: 110px;
 				width: 593px;
 				left: 100px;
 				line-height: 80px;
@@ -284,6 +282,10 @@
 				
 				body.view .download-inner{
 					background: rgba(250,250,250, 0.8);
+				}
+				
+				.page .footer {
+					/*bottom: 43px;*/
 				}
 			}
 			
@@ -451,12 +453,13 @@
 				
 				.page.page2 .teacher {
 					position: absolute;
-					left: 0px;
-					right: 0px;
-					bottom: 16.5vw;
-					color: #fff;
-					font-size: 4vw;
-					text-align: center;
+				    left: 0px;
+				    right: 0px;
+				    bottom: 8.6vw;
+				    color: #fff;
+				    font-size: 4vw;
+				    text-align: center;
+				    width: 100%;
 				}
 				
 				.page.page3 img.avatar {
@@ -766,7 +769,7 @@
 		<script src="libs/swiper/swiper.min.js"></script>
 		<script>
 			function download() {
-				window.location.href =  "http://localhost:8080/MedicalReport/Download?name=我的pdf&url=" + window.encodeURIComponent(window.location.href);
+				window.location.href =  "http://cky.ritacc.net:8080/MedicalReport/Download?name=我的pdf&url=" + window.encodeURIComponent(window.location.href);
 			}
 		
 			document.body.className = "view";
